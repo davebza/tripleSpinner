@@ -1,0 +1,73 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>Sentence Game: Because!</title>
+    
+    <meta name="description" content="Sentence Game: Because!">
+    <meta name="author" content="Dave Brown">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Links to the needed framework & other includes -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/js/bootstrap.min.js">
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="bower_components/components-font-awesome/css/font-awesome.min.css">      
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/tether/dist/js/tether.min.js"></script>
+    
+    <!-- Link to the stylesheet -->
+    <link rel="stylesheet" href="gameStyle.css">
+
+</head>
+
+<body id = "body">
+    
+    <div class = "container-fluid">
+        
+        <div class = "row"><!--main bootstrap row -->
+            
+            <div class = "col-sm-12">
+                <div><h1>Make a sentence!</h1></div>
+                
+                <div class = "col-sm-4" id = "leftColumn">
+                    <div id = "leftOutputArea"></div>
+                    <div id = "leftPictureArea">
+                        <img src = "gameImages/rainbow.jpeg" width = "100%">
+                    </div>
+                    <button type="button" onclick = "getLeftArea()" class = "btn btn-success btn-lg">Get the pronoun!</button>
+                </div><!-- end of left area -->
+                
+                <div class = "col-sm-4" id = "middleColumn">
+                    <div id = "middleOutputArea"></div>
+                    <div id = "middlePictureArea">
+                        <img src = "gameImages/cat.jpeg" width = "100%">
+                    </div>
+                    <button type="button" onclick = "getMiddleArea()" class = "btn btn-warning btn-lg">Get the feeling!</button>
+                </div>
+                <!-- end of middle area -->
+                
+                <div class = "col-sm-4" id = "rightColumn">
+                    <div id = "rightOutputArea"></div>
+                    <div id = "rightPictureArea">
+                        <img src = "gameImages/placeholder.jpg" width = "100%">
+                    </div>
+                    <button type="button" onclick = "getRightArea()" class = "btn btn-danger btn-lg">Why?</button>
+                </div><!-- end of right area -->
+                
+        </div><!-- End of main col -->    
+        </div><!-- End of the bootstrap row -->
+    </div><!-- End of container-fluid -->
+    
+    <!-- Javascript includes go here, for performance -->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>  
+    <script src="bower_components/tether/dist/js/tether.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="tripleSpinner.js"></script>  
+    
+</body>
+</html>
